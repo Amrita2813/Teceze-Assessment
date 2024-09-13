@@ -1,0 +1,31 @@
+.header-container {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  .img-container {
+    color: white;
+    margin-left: 10%;
+  }
+
+  .right-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-right: 16%;
+  }
+
+  .right-container>span {
+    color: white;
+  }
+
+  .get-started-btn {
+    border: none;
+    padding: 8px;
+    background: #b9fd50;
+    border-radius: 8px;
+  }
+}

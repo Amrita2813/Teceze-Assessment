@@ -1,0 +1,31 @@
+<div class="testimonial-container">
+  <div class="heading-container">
+    <h3>TESTIMONIAL</h3>
+    <h1>Customer is Our Top</h1>
+    <h1>Priority</h1>
+    <p>We survey all of our clients, the results of which go directly to our CEO.</p>
+  </div>
+  <div class="card-slider">
+    <span class="prev" onclick="currentSlide(-1)">
+      ◀
+    </span>
+    <div class="slides">
+      <div class="mySlides" *ngFor="let testimonial of testimonials; let i = index">
+        <div class="content">
+          <div class="heading">
+            <img src="" alt="">
+            <h3>Gymstory</h3>
+            <h2>Kornix is the Best Digital Agency I have Ever Seen! Highly Recommended</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora natus nostrum voluptates consectetur
+              molestias veniam amet sint iste fugit laudantium sapiente sed, accusamus distinctio ut doloribus laborum
+              minima voluptate autem?</p>
+          </div>
+        </div>
+        <img src="../../../assets/profile.jpg" alt="" class="profile">
+      </div>
+    </div>
+    <span class="next" onclick="plusSlides(1)">
+      ▶
+    </span>
+  </div>
+</div>
