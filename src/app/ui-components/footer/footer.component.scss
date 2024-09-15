@@ -56,7 +56,6 @@
   }
 
   .seperator {
-    margin-top: 20px;
     border-top: 1px solid white;
     width: 100%;
   }
@@ -73,6 +72,40 @@
 
     .footer-sub-details>div {
       flex: 1;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    gap: 16px;
+
+    .img {
+      width: 20px;
+    }
+  }
+
+  .contact {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+
+  .footer {
+    background: black;
+
+    .imp-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 16px;
+      margin-bottom: 24px;
+
+      .sub-links {
+        display: flex;
+        gap: 16px;
+      }
     }
   }
 }

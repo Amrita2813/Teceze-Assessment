@@ -8,35 +8,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './testimonial.component.html',
   styleUrl: './testimonial.component.scss'
 })
-export class TestimonialComponent implements OnInit {
+export class TestimonialComponent {
+  currentIndex = 0;
 
- slideIndex = 1;
+  slideIndex = 1;
   testimonials = [
-    { text: 'This is the first testimonial.', author: 'John Doe' },
+    { title: 'Gymstory.', author: 'Kornix is the Best Digital Agency I have Ever Seen! Highly Recommended',description:'Lorem ipsum dolor sit amet consectet Lorem ipsum dolor sit amet consectet Lorem ipsum dolor sit amet consectet Lorem ipsum dolor sit amet consectet Lorem ipsum dolor sit amet consectet' },
+    { title: 'Pravir.', author: 'Kornix is the Best Digital Agency I have Ever Seen! Highly Recommended',description:'Lorem ipsum dolor sit amet consectet Lorem ipsum dolor sit amet consectet Lorem ipsum dolor sit amet consectet Lorem ipsum dolor sit amet consectet Lorem ipsum dolor sit amet consectet' },
+    { title: 'Gitaaki.', author: 'Kornix is the Best Digital Agency I have Ever Seen! Highly Recommended',description:'Lorem ipsum dolor sit amet consectet Lorem ipsum dolor sit amet consectet Lorem ipsum dolor sit amet consectet Lorem ipsum dolor sit amet consectet Lorem ipsum dolor sit amet consectet' },
   ];
 
-  ngOnInit(): void {
-      this.showSlides(this.slideIndex)
+  changeSlide(direction: number) {
+    this.currentIndex = (this.currentIndex + direction + this.testimonials.length) % this.testimonials.length;
   }
-
- showSlides(index:number) {
-  let i;
-  // let slides = document.getElementsByClassName("mySlides");
-  // console.log('slides',slides);
-  // if (index > slides.length) {this.slideIndex = 1}
-  // if (index < 1) {this.slideIndex = slides.length}
-  // for (i = 0; i < slides.length; i++) {
-  //   slides[i].style.display = "none";
-  // }
-  // slides[this.slideIndex-1].style.display = "block";
-}
-
-plusSlides(index:number) {
-  this.showSlides(this.slideIndex += index);
-}
-
-currentSlide(index:number) {
-  this.showSlides(this.slideIndex = index);
-}
 
 }
